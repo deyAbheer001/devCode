@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calc</title>
+    
+    
+</head>
+<body>
+    <marquee behavior="" direction="left"><h1>Salary Calc</h1></marquee>
+    <label for="salary">INPUT SALARY : </label>
+    <input type="text" placeholder="enter salary here" id="basic">
+    <br>
+    <br>
+    <button id="compute">COMPUTE</button>
+    <br>
+    <br>
+    <fieldset>
+        <legend>
+            <strong>ALLOWANCES</strong>
+        </legend>
+
+        <p>HRA is : <span id="hra"></span></p>
+        <p>DA is : <span id="da"></span></p>
+        <p>TA is : <span id="ta"></span></p>
+        <p>PF is : <span id="pf"></span></p>
+        <p>MA is : <span id="ma"></span></p>
+        <p>TAX is : <span id="tax"></span></p>
+        <p>GROSS SALARY is : <span id="gross"></span></p>
+        <p>NET SALARY is : <span id="net"></span></p>
+    </fieldset>
+
+    <script type="module" src="./model.js"></script>
+    <script src="./controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+function weeksInAge(age){
+    console.log("Number of Weeks in your age is : ", age*52)
+}
+
+let age = prompt("Enter your Age : ")
+
+weeksInAge(age)

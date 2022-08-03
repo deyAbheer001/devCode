@@ -1,0 +1,9 @@
+function sandwitchExtended(bread, cheese){
+    let breads = Math.floor(bread/2)
+    if(cheese>bread){
+        console.log("Total Number of Sandwitches are ",cheese)
+    }
+    else{
+        console.log("Total Number of Sandwitches are ",breads)
+    }
+}

@@ -1,0 +1,15 @@
+function wishBirthday(date, month){
+
+    let todayDate = new Date()
+    if(todayDate.getDate()==date && todayDate.getMonth()==(month-1)){
+        console.log("HAPPY BIRTHDAY !")
+    }
+    else{
+        console.log("NO BIRTHDAY !")
+    }
+}
+
+let BirthDate = prompt("Enter Your Birthdate : ")
+let BirthMonth = prompt("Enter Your Birth month :")
+
+wishBirthday(BirthDate, BirthMonth)

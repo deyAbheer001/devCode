@@ -1,0 +1,12 @@
+function sandwitch(bread){
+    if(bread%2==0){
+        console.log("Sandwitches are ",(bread/2))
+    }
+    else{
+        console.log("Sandwitches are ",((bread-1)/2))
+    }
+}
+
+let bread = prompt("Enter the number of Breads:")
+
+sandwitch(bread)
