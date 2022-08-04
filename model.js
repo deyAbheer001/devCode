@@ -30,7 +30,6 @@ let calculation = {
         return basicSal * 0.05;
     }
 
-
 }
 
 function calGs(basicSal) {
