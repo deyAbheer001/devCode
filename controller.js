@@ -1,7 +1,3 @@
-
-
-// console.log(basic)
-
 const hra = document.getElementById("hra");
 const da = document.getElementById("da");
 const ta = document.getElementById("ta");
@@ -12,7 +8,6 @@ const gross = document.getElementById("gross");
 
 
 const compute = document.getElementById("compute")
-// console.log(calculation)
 
 compute.addEventListener('click', () =>{
 
