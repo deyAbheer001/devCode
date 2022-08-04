@@ -1,13 +1,8 @@
-let Salcalculator = require("./model")
 
-const basic = document.getElementById('basic').value
 
 // console.log(basic)
 
-
 const hra = document.getElementById("hra");
-hra.innerText = Salcalculator.calHra(basic)
-// console.log()
 const da = document.getElementById("da");
 const ta = document.getElementById("ta");
 const pf = document.getElementById("pf");
@@ -17,11 +12,21 @@ const gross = document.getElementById("gross");
 
 
 const compute = document.getElementById("compute")
+// console.log(calculation)
 
 compute.addEventListener('click', () =>{
 
-    const basic = document.getElementById("basic").value;
-    console.log(basic);
+    const basic = parseInt(document.getElementById("basic").value);
+    
+    hra.innerText = calculation.calHra(basic);
+    da.innerText = calculation.calDa(basic);
+    ta.innerText = calculation.calTa(basic);
+    pf.innerText = calculation.calPf(basic);
+    ma.innerText = calculation.calMa(basic);
+    tax.innerText = calculation.calTax(basic);
+    gross.innerText = calGs(basic);
+    net.innerText = calGs(basic)-(calculation.calPf(basic+calculation.calTax(basic)));
+
 })
 
 
