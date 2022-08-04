@@ -1,40 +1,41 @@
-export function calHra(basicSal) {
+let calculation = {
 
-    return basicSal * 0.40;
+    calHra(basicSal) {
+
+        return basicSal * 0.25;
+    },
+
+    calDa(basicSal) {
+
+        return basicSal * 0.02;
+    },
+
+    calTa(basicSal) {
+
+        return basicSal * 0.20;
+    },
+
+    calPf(basicSal) {
+
+        return basicSal * 0.10;
+    },
+
+    calMa(basicSal) {
+
+        return basicSal * 0.25;
+    },
+
+    calTax(basicSal) {
+
+        return basicSal * 0.05;
+    }
+
+
 }
 
-function calDa(basicSal) {
+function calGs(basicSal) {
 
-    return basicSal * 0.30;
+    return (basicSal + calculation.calHra(basicSal)+calculation.calDa(basicSal)+calculation.calTa(basicSal)+calculation.calPf(basicSal)+calculation.calMa(basicSal));
 }
 
-function calTa(basicSal) {
-
-    return basicSal * 0.20;
-}
-
-function calPf(basicSal) {
-
-    return basicSal * 0.25;
-}
-
-function calMa(basicSal) {
-
-    return basicSal * 0.10;
-}
-
-function calTax(basicSal) {
-
-    return basicSal * 0.25;
-}
-
-function calGross(basicSal) {
-
-    retur;
-}
-
-function calNet(basicSal) {
-
-    return basicSal * 0.25;
-}
 
